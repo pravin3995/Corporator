@@ -8269,7 +8269,8 @@ hr {
   color: #fff;
   text-decoration: none;
   margin-right: 20px;
-  font-size: 13px; }
+  font-size: 13px;
+  transition: 0.3s; }
   .conatct-info a:hover, .social-link a:hover {
     color: #f27e01; }
   .conatct-info a i, .social-link a i {
@@ -8297,18 +8298,26 @@ hr {
   max-width: 100%;
   width: 100%; }
 
+.fa-bars {
+  color: #000; }
+
+.left-logo {
+  display: none; }
+
 .navbar-nav .dropdown-menu {
   background: #f27e01;
   border-radius: 0;
   border: none; }
   .navbar-nav .dropdown-menu a {
     font-size: 14px;
-    color: #fff; }
+    color: #fff;
+    transition: 0.3s; }
 
 .navbar-nav .nav-item .nav-link {
   color: #000;
   font-size: 14px;
-  margin-right: 15px; }
+  margin-right: 15px;
+  transition: 0.3s; }
   .navbar-nav .nav-item .nav-link:hover {
     color: #f27e01; }
   .navbar-nav .nav-item .nav-link:focus {
@@ -8354,15 +8363,21 @@ hr {
 .recent-activity {
   margin-bottom: 60px; }
 
+.mt-25 {
+  margin-top: 25px; }
+
 .gallery {
   margin-bottom: 60px; }
+  .gallery img {
+    margin-bottom: 28px; }
 
 .latest-news {
   margin-bottom: 60px; }
   .latest-news .news-info {
     margin-left: 20px; }
   .latest-news a {
-    color: #000; }
+    color: #000;
+    transition: 0.3s; }
     .latest-news a:hover {
       color: #f27e01;
       text-decoration: none; }
@@ -8382,6 +8397,8 @@ hr {
   .contact-us form label {
     font-size: 12px;
     font-weight: 600; }
+  .contact-us form .email, .contact-us form .subject {
+    margin-left: 15px; }
   .contact-us span {
     font-size: 14px;
     margin-left: 5px; }
@@ -8390,7 +8407,8 @@ hr {
   .contact-us .contact-us_info {
     margin-top: 15px; }
     .contact-us .contact-us_info a {
-      color: #000; }
+      color: #000;
+      transition: 0.3s; }
       .contact-us .contact-us_info a:hover {
         color: #f27e01;
         text-decoration: none; }
@@ -8399,6 +8417,12 @@ hr {
 
 footer {
   background: #121212; }
+  footer .footer-logo {
+    width: 55%; }
+  footer .download h4 {
+    flex: 100%; }
+  footer .download .google-play {
+    margin-right: 10px; }
   footer .quick-link .navbar-nav {
     column-count: 2;
     display: block; }
@@ -8412,3 +8436,140 @@ footer {
     padding: 5px 0; }
     footer .bottom p {
       font-size: 12px; }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1060px; } }
+
+@media screen and (max-width: 992px) {
+  .about-us .box {
+    bottom: -55px;
+    padding: 6px 19px;
+    margin-bottom: 15px; }
+  .recent-activity .recent-activity-desciption button {
+    margin-bottom: 20px; }
+  footer .footer-logo {
+    width: 100%; }
+  footer .google-play {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 768px) {
+  .menu nav {
+    justify-content: space-between !important; }
+    .menu nav .navbar-nav .navbar-brand {
+      display: none; }
+  .menu .left-logo {
+    display: block; }
+  .container {
+    max-width: 720px; }
+  .about-us .box {
+    bottom: -97px;
+    padding: 14px 16px;
+    margin-bottom: 15px; }
+  .recent-activity .mt-25 {
+    margin-top: 0; }
+  .recent-activity .recent-activity-desciption {
+    margin-top: 20px; }
+    .recent-activity .recent-activity-desciption button {
+      margin-bottom: 15px; }
+  footer .footer-logo {
+    width: 100%; } }
+
+@media screen and (max-width: 576px) {
+  .top-bar .top-bar-info .conatct-info a {
+    font-size: 12px;
+    margin-right: 13px; }
+  .top-bar .top-bar-info .social-link a {
+    margin-right: 14px; }
+  .top-bar .top-bar-info .social-link i {
+    font-size: 13px; }
+  .about-us .about-image img {
+    margin: 0; }
+  .about-us .box {
+    bottom: -35px;
+    padding: 25px 41px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    left: 0;
+    width: 90%;
+    right: 0; }
+  .container {
+    width: 100%; }
+  .about-us {
+    margin-top: 0; }
+    .about-us .description {
+      margin-top: 50px; }
+  .video-section .video-info h3 {
+    font-size: 36px; }
+  .recent-activity .order {
+    order: 2; }
+  .recent-activity .recent-activity-desciption {
+    margin: 15px 0; }
+  .gallery img {
+    margin-top: 10px;
+    margin-bottom: 15px; }
+  .contact-us {
+    margin-bottom: 0; }
+    .contact-us form .form-group {
+      flex: 100%; }
+    .contact-us form .email, .contact-us form .subject {
+      margin-left: 0; }
+  footer .footer-follow, footer .download {
+    margin-top: 15px; }
+  footer .download .google-play {
+    margin-bottom: 5px; } }
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 26px; }
+  hr {
+    margin: 0 auto; }
+  .container {
+    width: 100%; }
+  .top-bar .top-bar-info .conatct-info a {
+    font-size: 11px; }
+  .top-bar .top-bar-info .social-link a {
+    margin-right: 11px; }
+  .top-bar .top-bar-info .social-link i {
+    font-size: 13px; }
+  .about-us {
+    text-align: center;
+    margin-top: 0; }
+    .about-us .description {
+      margin-top: 0; }
+    .about-us h2 {
+      margin-top: 25px;
+      text-align: center; }
+    .about-us hr {
+      margin: 0 auto; }
+    .about-us .box {
+      display: none; }
+    .about-us .about-image img {
+      margin: 0; }
+  .video-section .video-info h3 {
+    font-size: 35px; }
+  .recent-activity {
+    text-align: center; }
+    .recent-activity img {
+      margin-top: 15px; }
+    .recent-activity .mt-5 {
+      margin: 0; }
+    .recent-activity .recent-activity-desciption {
+      margin-top: 25px; }
+  .gallery img {
+    margin-top: 15px; }
+  .latest-news .latest-news-left img {
+    margin-top: 15px; }
+  .follow .facebook-link {
+    margin-top: 10px; }
+  .contact-us form .form-group {
+    flex: 100%;
+    margin: 0; }
+  .contact-us form button {
+    margin-top: 15px; }
+  footer .footer-logo {
+    width: 100%; }
+  footer .footer-follow, footer .download {
+    margin-top: 15px; }
+  footer .download .google-play {
+    margin-bottom: 5px; } }
