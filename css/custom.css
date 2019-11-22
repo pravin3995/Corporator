@@ -8361,13 +8361,13 @@ hr {
       font-size: 38px; }
 
 .recent-activity {
-  margin-bottom: 60px; }
+  margin-bottom: 20px; }
 
 .mt-25 {
   margin-top: 25px; }
 
 .gallery {
-  margin-bottom: 60px; }
+  margin-bottom: 35px; }
   .gallery img {
     margin-bottom: 28px; }
 
@@ -8375,6 +8375,8 @@ hr {
   margin-bottom: 60px; }
   .latest-news .news-info {
     margin-left: 20px; }
+    .latest-news .news-info p {
+      margin: 0; }
   .latest-news a {
     color: #000;
     transition: 0.3s; }
@@ -8437,6 +8439,42 @@ footer {
     footer .bottom p {
       font-size: 12px; }
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1; }
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px; }
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 1060px; } }
@@ -8483,6 +8521,8 @@ footer {
     margin-right: 14px; }
   .top-bar .top-bar-info .social-link i {
     font-size: 13px; }
+  .about-us .description {
+    margin-left: 0; }
   .about-us .about-image img {
     margin: 0; }
   .about-us .box {
